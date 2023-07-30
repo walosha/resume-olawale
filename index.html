@@ -25,27 +25,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   </head>
   <body>
-    <div class="wrapper clearfix">
-      <div class="left">
-        <div class="name-hero">
-          <div class="me-img"></div>
-          <div class="name-text">
-            <h1 class="fs-1">Olawale Tope Afuye</h1>
-            <p>42 Otunba Adetilewa Street, Ikorodu Lagos</p>
-            <p>Phone: 08185431319, 08037763048</p>
-            <p>Email: walosha@yahoo.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="right">
+    <div class="wrapper">
+      <div class="container">
         <div class="inner">
+          <section>
+            <div class="text-center">
+              <h1 class="fs-1 text-dark">Olawale Tope Afuye</h1>
+              <p>42 Otunba Adetilewa Street, Ikorodu Lagos</p>
+              <p>Phone: 08185431319, 08037763048</p>
+              <p>Email: walosha@yahoo.com</p>
+            </div>
+          </section>
           <section>
             <h1>Professional Summary</h1>
             <p>
-              Self-motivated Web Developer with a high level of passion working
-              on multiple projects. Passionate and hard-working with a penchant
-              for meeting deadlines. Interested in a role with a company
-              promoting best practices and offering diverse customer projects.
+              I build top-quality software applications at scale and enjoy
+              mentoring junior engineers to achieve high throughputs. I also
+              take pride in explaining complex software engineering topics in a
+              clear and concise way. Let's connect and discuss how I can help
+              your team deliver exceptional results.
             </p>
           </section>
           <section>
@@ -83,9 +81,11 @@
           </section>
           <section>
             <h1>Employment</h1>
-            <p>
+            <p class="fw-bold">
               April 2023 - Present
-              <em>Kimberly Ryan - Frontend Developer (Angular)</em>
+              <em class="text-success"
+                >Kimberly Ryan - Frontend Developer (Angular)</em
+              >
             </p>
             <p>
               As an independent contractor, I am working as a Frontend Developer
@@ -96,8 +96,10 @@
               requirements.
             </p>
             <p>
-              April 2022 - Present
-              <em>Finatava Technology - Lead Backend Developer</em>
+              April 2023 - Present
+              <em class="text-success"
+                >Finatava Technology - Lead Backend Developer</em
+              >
             </p>
             <p>
               As a backend developer for a payment solutions company, I am
@@ -108,7 +110,9 @@
             </p>
             <p>
               February 2021 - March 2022 |
-              <em>Fresible, No. 65 Ogunlana Dr, Surulere, Lagos</em>
+              <em class="text-success"
+                >Fresible, No. 65 Ogunlana Dr, Surulere, Lagos</em
+              >
             </p>
             <p>
               • Creating scalable and resilient web applications using React,
@@ -118,8 +122,52 @@
               practices.
             </p>
             <p>
+              Apr 2022 - Present · 1 yr 4 mos
+              <em class="text-success">Senior Software Engineer</em>
+              <br />
+              Prunedge · Full-time
+              <br />
+              Lagos, Nigeria
+            </p>
+            <p>
+              Led a team of 30 engineers to develop cutting-edge products across
+              diverse industries
+              <br />
+              Conducted code reviews in React and Angular for top-performing
+              software engineering team
+              <br />
+              Designed, developed, modified, and implemented front-end
+              architecture using Angular, Typescript, and ReactJS
+              <br />
+              Mentored and guided aspiring and new software developers to
+              success
+              <br />
+              Collaborated with cross-functional teams, including product
+              managers and designers, to ensure project success and deliverables
+              were met on time and within budget
+              <br />
+              Implemented best practices for software development and coding
+              standards, resulting in increased team efficiency and code quality
+              <br />
+              Conducted usability testing and incorporated user feedback to
+              continuously improve the user experience and overall product
+              design
+              <br />
+              Proactively identified and addressed technical issues to prevent
+              project delays and mitigate risks
+              <br />
+              Created and maintained technical documentation, including system
+              architecture, design documents, and user manuals
+              <br />
+              Participated in agile development processes, including daily
+              stand-up meetings, sprint planning, and retrospectives to ensure
+              successful project outcomes.
+              <br />
+            </p>
+
+            <p>
               November 2020 - Present |
-              <em>VENTURE234, Victoria Island</em>
+              <em class="text-success">VENTURE234, Victoria Island</em>
             </p>
             <p>
               - Proficient in a range of technologies including Javascript,
@@ -148,7 +196,7 @@
             </p>
             <p>
               March 2020 - November 2020 |
-              <em>Nzenweofor Group, Victoria Island</em>
+              <em class="text-success">Nzenweofor Group, Victoria Island</em>
             </p>
             <p>
               • Created Mobile applications with intuitive and interactive User
@@ -162,7 +210,7 @@
             </p>
             <p>
               September 2019 - March 2020 |
-              <em>ANCLA TECHNOLOGIES, Yaba</em>
+              <em class="text-success">ANCLA TECHNOLOGIES, Yaba</em>
             </p>
             <p>
               • Created Mobile applications with intuitive and interactive User
@@ -184,7 +232,7 @@
             </p>
             <p>
               January 2019 - Present |
-              <em>PACIFIC PROFESSIONAL SERVICE LAGOS</em>
+              <em class="text-success">PACIFIC PROFESSIONAL SERVICE LAGOS</em>
             </p>
             <p>
               • Created site layout and user interface using HTML and CSS
@@ -207,12 +255,11 @@
               the hosting account.
             </p>
           </section>
-          <!-- ... Other Education ... -->
           <section>
             <h1>Education</h1>
             <p>
               - INSTITUTE OF CHARTERED ACCOUNTANTS OF NIGERIA (ACA)
-              <em>Finance, Taxation, and Accounting</em>
+              <em class="text-success">Finance, Taxation, and Accounting</em>
             </p>
           </section>
           <section>
@@ -262,10 +309,13 @@
           </section>
           <!-- ... Other sections ... -->
         </div>
-        <button id="downloadPdfButton">Download PDF</button>
       </div>
     </div>
-
+    <div class="d-flex justify-content-center mb-5">
+      <button class="btn btn-success" id="downloadPdfButton">
+        Download PDF
+      </button>
+    </div>
     <script>
       // Function to handle the "Download PDF" button click
       window.onload = function () {
@@ -277,16 +327,25 @@
             const content = document.querySelector(".wrapper");
 
             // Use html2canvas to capture the content as an image
-            html2canvas(content, {
-              dpi: 300,
-            }).then((canvas) => {
-              var imgData = canvas.toDataURL("image/jpeg");
-              var pdf = new jsPDF("p", "mm", "a4");
-              const pageWidth = pdf.internal.pageSize.getWidth();
-              const pageHeight = pdf.internal.pageSize.getHeight();
-              pdf.addImage(imgData, "JPEG", 0, 0, pageWidth, pageHeight);
-              pdf.save("Test.pdf");
-            });
+            setTimeout(() => {
+              // Use html2canvas to capture the content as an image
+              html2canvas(content).then((canvas) => {
+                const imgData = canvas.toDataURL("image/png");
+
+                // Add the image to the PDF
+                doc.addImage(
+                  imgData,
+                  "PNG",
+                  0,
+                  0,
+                  doc.internal.pageSize.getWidth(),
+                  doc.internal.pageSize.getHeight()
+                );
+
+                // Save the generated PDF with a filename
+                doc.save("resume.pdf");
+              });
+            }, 100);
           });
       };
     </script>

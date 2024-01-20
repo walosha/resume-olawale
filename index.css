@@ -149,3 +149,12 @@ h1 {
     font-size: 14px;
   }
 } */
+
+section {
+  padding-top: 20px; /* Adjust the spacing between sections */
+}
+
+/* Adjust styles for the first section if needed */
+section:first-of-type {
+  /* Add your styles here */
+}
